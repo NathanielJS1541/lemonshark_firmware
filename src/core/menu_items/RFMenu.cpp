@@ -8,6 +8,7 @@
 #include "modules/rf/rf_listen.h"
 #include "modules/rf/rf_scan.h"
 #include "modules/rf/rf_send.h"
+#include "modules/rf/rf_smart_plug.h"
 #include "modules/rf/rf_spectrum.h"
 #include "modules/rf/rf_waterfall.h"
 
@@ -17,6 +18,7 @@ void RFMenu::optionsMenu() {
 #if !defined(LITE_VERSION)
         {"Record RAW",      rf_raw_record             }, // Pablo-Ortiz-Lopez
         {"Custom SubGhz",   sendCustomRF              },
+        {"Smart Plug",      rf_smart_plug             }, // @NathanielJS1541 and @dominicmason555
 #endif
         {"Spectrum",        rf_spectrum               },
 #if !defined(LITE_VERSION)
